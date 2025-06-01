@@ -1,6 +1,6 @@
 # AwsUse
 
-AwsUse is a simple PowerShell utility that lets you switch between multiple AWS accounts on your device from the command line with ease.
+AwsUse is a simple PowerShell utility that lets you switch between multiple AWS accounts from the command line with ease.
 It gives you quick access to 3 handy commands:
 
 * `awsuse select <profile>` — Set the selected profile as the current default AWS account.
@@ -17,7 +17,8 @@ It gives you quick access to 3 handy commands:
 git clone https://github.com/FazlOmar9/AwsUse.git
 ```
 
-Or just download the `awsuse.ps1` file and place it somewhere like `C:\Scripts\awsuse.ps1`.
+**Important:** You need **both** files: `awsuse.ps1` and `awsuse.cmd`
+The `.ps1` script does the work, and the `.cmd` file lets you call `awsuse` easily from any terminal.
 
 ---
 
@@ -47,16 +48,15 @@ $accounts = @{
 
 ### 3. Add it to your system PATH
 
-To use `awsuse` from any PowerShell window:
+To use `awsuse` from any PowerShell or CMD window:
 
-1. Rename the script to `awsuse.ps1` if it's not already.
-2. Move it to a permanent folder (e.g., `C:\Scripts\`).
-3. Add that folder to your system `PATH`:
+1. Keep both `awsuse.ps1` and `awsuse.cmd` in a permanent folder (e.g., `C:\Scripts\`).
+2. Add that folder to your system `PATH`:
 
    * Press `Win + S`, search for **"Environment Variables"**.
    * Edit the **System variables** section → Find and edit the `Path` variable.
    * Add the path to the folder (e.g., `C:\Scripts`).
-4. Restart your PowerShell terminal.
+3. Restart your terminal.
 
 Now you can run `awsuse` from anywhere like this:
 
