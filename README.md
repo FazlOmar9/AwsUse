@@ -28,21 +28,21 @@ Open `awsuse.ps1` in a text editor and find this section:
 
 ```
 $accounts = @{
-    "main" = @{
-        aws_access_key_id = "YOUR_KEY"
-        aws_secret_access_key = "YOUR_SECRET"
-        region = "ap-south-1"
-    }
-    "veritex" = @{
-        aws_access_key_id = "YOUR_KEY"
-        aws_secret_access_key = "YOUR_SECRET"
-        region = "us-east-1"
-    }
+  "account1" = @{
+    aws_access_key_id     = "YOUR_KEY"
+    aws_secret_access_key = "YOUR_SECRET"
+    region                = "ap-south-1"
+  }
+  "account2" = @{
+    aws_access_key_id     = "YOUR_KEY"
+    aws_secret_access_key = "YOUR_SECRET"
+    region                = "ap-south-1"
+  }
 }
 ```
 
 * Replace the values with your own access keys and regions.
-* Add or remove accounts as needed — the key names like `"main"` or `"veritex"` are the profile names you’ll use with `awsuse select`.
+* Add or remove accounts as needed — the key names like `"account1"` or `"account2"` are the profile names you’ll use with `awsuse select`.
 
 ---
 
@@ -61,7 +61,7 @@ To use `awsuse` from any PowerShell or CMD window:
 Now you can run `awsuse` from anywhere like this:
 
 ```
-awsuse select main
+awsuse select account1
 awsuse whoami
 awsuse list
 ```
