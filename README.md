@@ -14,7 +14,7 @@ It gives you quick access to 3 handy commands:
 ### 1. Clone or download this repository
 
 ```
-git clone https://github.com/your-username/AwsUse.git
+git clone https://github.com/FazlOmar9/AwsUse.git
 ```
 
 Or just download the `awsuse.ps1` file and place it somewhere like `C:\Scripts\awsuse.ps1`.
