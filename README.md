@@ -31,12 +31,12 @@ $accounts = @{
   "account1" = @{
     aws_access_key_id     = "YOUR_KEY"
     aws_secret_access_key = "YOUR_SECRET"
-    region                = "ap-south-1"
+    default_region        = "ap-south-1"
   }
   "account2" = @{
     aws_access_key_id     = "YOUR_KEY"
     aws_secret_access_key = "YOUR_SECRET"
-    region                = "ap-south-1"
+    default_region        = "ap-south-1"
   }
 }
 ```
