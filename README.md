@@ -62,6 +62,7 @@ Now you can run `awsuse` from anywhere like this:
 
 ```
 awsuse select account1
+awsuse select account2 --region ap-south-1
 awsuse whoami
 awsuse list
 ```
